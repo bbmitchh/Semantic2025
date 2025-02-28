@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Beginner Sourdough Bread Recipe</title>
+    </head>
+    <body>
+        <header>
+            <h1>Beginner Sourdough Bread</h1>
+            <nav>
+                <a href="#recipe">Jump to Recipe</a>
+            </nav>
+        </header>
+        <picture>
+            <source srcset="media/beginnerbread_small.png" media="(max-width: 672px)">
+            <source srcset="media/beginnerbread_large.png" media="(min-width: 673px)">
+            <img src="media/beginnerbread.png" alt="A beginner sourdough loaf cut open">
+        </picture>
+        
+        <h2 id="#recipe">Beginner Sourdough Recipe</h2>
+        </header>
+
+        <h3>Rate this Recipe & Leave a Comment</h3>
+        <form action="#" method="get">
+
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" required>
+        </form>        
+        <br>
+        <form action="#" method="get">
+            <label for="rating">Rate This Recipe</label>
+            <select id="rating" name="rating">
+                <option value="">Select a Rating</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </form>
+        <br>
+        <form action="#" method="get">
+            <label for="comments">Comment:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="60"></textarea>
+        </form>
+        
+        <form action="#" method="get">
+            <button type="submit" name="button_like">Submit</button>
+        </form>
+        
+    </body>
+
+</html>
