@@ -12,21 +12,32 @@
     </head>
     <body>
         <header>
-            <h1>Beginner Sourdough Bread</h1>
+            <img src="media/drawingloaf.PNG" alt="Logo of Drawn Sourdough Loaf" class="logo">
+            <h1><a href="index.html" >Baking with Bri</a></h1>
+        </header>
             <nav>
-                <h2>Navigation</h2><br>
-                <ol>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="recipes.html">All Recipes</a></li>
-                    <li><a href="starter.html">Sourdough Starter 101</a></li>
-                    <li><a href="basicsour.html"> Beginner Sourdough Bread Recipe</a></li>
-                    
-                </ol>
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="recipes.html" >All Recipes</a></li>
+                    <li><a href="starter.html" >Sourdough Starter 101</a></li>
+                    <li><a href="discard.html" >Discard Recipes</a></li>
+                </ul>
             </nav>
-            <nav>
-                <a href="#recipe">Jump to Recipe</a>
+       
+    <br>
+            <div class="recipe_header">
+                <img src="media/drawingloaf.PNG" alt="Drawing of a sourdough loaf">
+                <h1 class="recipe_header">Basic Sourdough Loaf Recipe</h1>
+                <br>
+                <h5>By: Brianna Slezak  
+                <br> April 2025</h5>
+                <br>
+                <br>
+                <p><a href="#recipe" class="jump_link"><strong>Jump to Recipe</strong></a></p>
+            </div>
             </nav>
         </header>
+    <br>
         <picture>
             <source srcset="media/beginnerbread_small.png" media="(max-width: 672px)">
             <source srcset="media/beginnerbread_large.png" media="(min-width: 673px)">
@@ -37,34 +48,53 @@
         <h2 id="recipe">Beginner Sourdough Recipe</h2>
         </header>
 
-        <h3>Rate this Recipe & Leave a Comment</h3>
-        <form action="#" method="get">
-
-            <label for="name">Name: </label>
-            <input type="text" name="name" id="name" required>
-        </form>        
-        <br>
-        <form action="#" method="get">
-            <label for="rating">Rate This Recipe</label>
-            <select id="rating" name="rating">
-                <option value="">Select a Rating</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-        </form>
-        <br>
-        <form action="#" method="get">
-            <label for="comments">Comment:</label><br>
-            <textarea id="comments" name="comments" rows="4" cols="60"></textarea>
-        </form>
+        <article class="recipe">
+            <header>
+                <h3 id="recipe">Beginner Sourdough Starter Recipe</h3>
+            </header>
+    
+            <section class="text_image">
+                    <strong>Supplies</strong><br>
+                    
+                    <br>
+                    <strong>Ingredients</strong>
+                 
+    
+                <strong>Instructions:</strong>
+                
+                
+            </p>
+              
+                <h3>Rate this Recipe & Leave a Comment</h3>
+                <form action="#" method="get">
         
-        <form action="#" method="get">
-            <button type="submit" name="button_like">Submit</button>
-        </form>
-        
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" required>
+                </form>        
+                <br>
+                <form action="#" method="get">
+                    <label for="rating">Rate This Recipe</label>
+                    <select id="rating" name="rating">
+                        <option value="">Select a Rating</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </form>
+                <br>
+                <form action="#" method="get">
+                    <label for="comments">Comment:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="60"></textarea>
+                </form>
+                
+                <form action="#" method="get">
+                    <button type="submit" name="button_like">Submit</button>
+                </form>
+            
+    
+            </section> 
     </body>
 
 </html>
