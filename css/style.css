@@ -1,4 +1,5 @@
 
+ /* Basic CSS/ Typograhpy */           
             html {
                 background-color: white; 
                 font-size: 100%;
@@ -6,10 +7,9 @@
             }
 
             body {
-                max-width: 100%;
-                margin: auto;
-                font-size: 3 rem;
-            
+                font-size: 1rem;
+
+                margin: 0 auto;
             }
 
             a {
@@ -22,22 +22,32 @@
                 height: 400px;
                 object-fit: cover;
             }
-
-            p.main {
+ /* homepage */ 
+            .main {
                 text-align: center;
-                margin:70px 150px;
                 font-size:large;
-                letter-spacing: .2em;
+                letter-spacing: .1em;
+                padding: 20px;
             }
-
+ /* main header and logo image */ 
             header {
                 display: flex;
+                flex-wrap: wrap;
+                align-items: center;
                 text-align: center;
                 justify-content: center;
                 text-transform: uppercase;
                 letter-spacing: 0.3em;
                 text-decoration: none;
                 color: black;
+            }
+
+            header .logo {
+                width: 120px;
+                height: auto;
+                margin-right: 20px;
+                display: block;
+    
             }
 
             .jump_link{
@@ -49,35 +59,35 @@
                 border-color: #606845;
                 border-style: solid;
             }
-
-            .text_image  {
+/*recipe box */
+            .text_image * {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center
-                gap: 10px;
+                justify-content: center;
+                text-align: center;
+                text-align: center;
                 margin: 2px auto;
+                gap:10px;
                 max-width: 800px;
                 padding: 10px;
-                line-height: 1.5;
-                text-align: center;
                 font-size: 12pt;
+            
             }
 
-            .recipe {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding: 10px 20px;
-                background-color:#f4f2eb;
-                border-radius: 5px;
-                border-color: #606845;
-                border-style: solid;
-                width: 60%;
-                margin: 0 auto ;
+            .block {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 10px;
+                font-size: 14pt;
+                line-height: 1.6;
+                text-align: center;
             }
-            
+
+            ul {
+                list-style-type: none;
+            }
+
 
             .image_image .text {
                 flex: 1;
@@ -100,6 +110,8 @@
                 text-align: center;
             }
 
+/* Recipe header */ 
+
             div.recipe_header {
                 background-color: #f4f2eb;
                 padding: 10px 20px;
@@ -116,13 +128,48 @@
                 height: auto;
                 margin-bottom: 20px;
             }
-
-            header .logo {
-                width: 90px;
-                height: auto;
-                margin-right: 10px;
+            
+            ul.recipe_list {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                display: flex;
+                flex-flow: row wrap;
+                gap: 20px;
+                justify-content:space-around
             }
+            
+            ul.recipe_list a {
+                display: block; 
+                color: black;
+                text-decoration: none;
+            }
+            
+            ul.recipe_list .recipe_photo {
+                width: 300px;
+                height: auto; 
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center; 
+            }
+            #recipe {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 10px;
+                background-color:#f4f2eb;
+                border-radius: 5px;
+                border-color: #606845;
+                border-style: solid;
+                width: 100%;
+                margin: 0 auto ;
+            }
+            
 
+
+          
             ul.browse {
                 display: flex;
                 flex-wrap: wrap;
@@ -178,16 +225,19 @@
                 border-radius: 10px;
                 margin: auto;
             }
-                
+
+/*Nav menu*/     
             nav ul li {
                     list-style-type: none;
+                    margin:8px 12px;
+                    
                 }
                 
 
             nav ul {
                 display: flex;
                 font-size: medium;
-                flex-wrap: nowrap;
+                flex-flow: row wrap;
                 text-align: center;
                 justify-content: space-around;
                 padding: 10px;
@@ -197,6 +247,15 @@
                 border-bottom: 2px solid black;
                 background-color: #606845;
             }
+
+
+            .frontphoto img {
+                    width: 100%;
+                    max-width: clamp(300px, 80vw, 800px);
+                    height: auto;
+                    display: block;
+                    margin: auto;
+                  }
 
           
             nav ul li a {
@@ -208,7 +267,7 @@
                 letter-spacing: 0.2em;
             }
 
-            nav ul li:hover {
+            nav ul li a:hover {
                 background-color: #8d9966;
             }
 
@@ -239,42 +298,6 @@
                 line-height: 2.5;
             }
 
-            ul.recipe_list a {
-                list-style-type: none;
-                padding: 0;
-                margin: 0;
-                display: flex;
-                flex-wrap: wrap;
-                gap: 20px;
-                justify-content: center;
-                color: black;
-                text-decoration: none;
-            }
-
-            ul.recipe_list .recipe_photo {
-                width: 300px;
-                height: 300px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-            }
-
-            .main {
-                display: flex;
-                gap: 10px;
-                flex-flow: row wrap;
-                justify-content: center;
-            }
-
-            .main_article { 
-                margin: auto;
-                max-width: clamp(320px, 40%, 1000px);
-            }
-
-            .secondary_article {
-                margin: auto;
-                max-width: clamp(320px, 40%, 1000px);
-            }
 
             footer {
                 border-top: 2px black solid;
