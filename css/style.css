@@ -95,14 +95,15 @@
             }
 
             .image {
-                flex: 1;
-                min-width: 300px;
-                max-width: 500px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
             .image img  {
-                width: 100%;
+                width: 50%;
                 height: auto;
                 border-radius:10px;
+                
             }
 
             h2 {
