@@ -91,8 +91,7 @@
 
             .image_image .text {
                 flex: 1;
-                min-width: 300px;
-                max-width: 500px;
+                width: 300px;
             }
 
             .image {
