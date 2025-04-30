@@ -43,7 +43,7 @@
         </script>
     </head>
     <body>
-        <header>
+        <header class ="mainheader">
             <img src="media/drawingloaf.PNG" alt="Logo of Drawn Sourdough Loaf" class="logo">
             <h1><a href="index.html" >Baking with Bri</a></h1>
         </header>
@@ -52,12 +52,12 @@
                     <li><a href="index.html" >Home</a></li>
                     <li><a href="recipes.html" >All Recipes</a></li>
                     <li><a href="starter.html" >Sourdough Starter 101</a></li>
-                    <li><a href="discard.html" >Discard Recipes</a></li>
+                    <li><a href="basicsour.html" >Basic Sourdough Recipe</a></li>
                 </ul>
             </nav>
        
     <br>
-            <div class="recipe_header">
+            <section class="recipe_header">
                 <img src="media/drawingstarter.PNG" alt="Drawing of a sourdough starter">
                 <h1 class="recipe_header">Sourdough Starter 101</h1>
                 <br>
@@ -66,9 +66,9 @@
                 <br>
                 <br>
                 <p><a href="#recipe" class="jump_link"><strong>Jump to Recipe</strong></a></p>
-            </div>
+            </section>
 
-            <div class="text">
+            <section class="text">
                 <p class="block">
                     So, you've decided to dive into the wonderful world of sourdough—congrats! 
                     Before you can bake those beautifully golden loaves, you need one key ingredient:
@@ -78,7 +78,7 @@
                     step-by-step, from mixing your first batch to keeping it strong and active for years
                  to come.
                  </p>
-                 </div>
+                </section>
 
             <picture class="image">
                 <source srcset="media/starterd_small.png" media="(max-width: 672px)">
@@ -87,9 +87,9 @@
             </picture>
         
 
-        <Header>
-            <h3>What Is Sourdough Starter?</h3>
-        </Header>
+        <header>
+            <h2>What Is Sourdough Starter?</h2>
+        </header>
             <p class="block">
                 A sourdough starter is a simple mix of flour and water that ferments over time,
                 growing wild yeast and good bacteria. It's what makes sourdough bread rise without
@@ -99,7 +99,7 @@
     <br>
     <hr>
         <header>
-            <h3>How Long Will It Take?</h3>
+            <h2>How Long Will It Take?</h2>
         </header>
             <p class="block">
                 Making a sourdough starter from scratch takes about 5 to 7 days, but it can sometimes
@@ -115,34 +115,52 @@
             </p>
             <br>
            
-    <article>
-        <header>
-            <h3 id="recipe">Beginner Sourdough Starter Recipe</h3>
+    <article id="recipe">
+        <header class="boxrecipe">
+            <section class="recipetext">
+                <h2>Beginner Sourdough Starter Recipe</h2>
+                <br>
+                <p>A sourdough starter is a live fermented culture of flour and water used to naturally leaven bread.
+                It captures wild yeast and beneficial bacteria from the environment, giving sourdough its signature tangy flavor
+                 and chewy texture. With just a few days of feeding, your homemade starter will be ready to bake delicious, crusty loaves.
+                </p>
+                <ul>
+                    <li><strong>Prep:</strong> 7 days</li>
+                </ul>
+            </section>
+
+                <section class="recipeimage">
+                    <img src="media/bbo.png" alt="sourdough loaf cut in half"/>
+                </section>
+                
+          
         </header>
-
-        <section class="block">
-            <strong>Supplies</strong>
+<br>
+        <section class="recipein">
+            <strong>Supplies:</strong>
             <ul>
-                <li>A glass jar with a lid<a href="https://www.walmart.com/ip/Mainstays-Kitchen-Storage-38-Ounce-Clear-Glass-Lock-Lid-Jar/119760919?wmlspartner=wlpa&selectedSellerId=0&wl13=571&gclsrc=aw.ds&adid=22222222277119760919_117755028669_12420145346&wl0=&wl1=g&wl2=c&wl3=501107745824&wl4=pla-394283752452&wl5=9014313&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=local&wl12=119760919&veh=sem_LIA&gclsrc=aw.ds&gad_source=1&gclid=Cj0KCQiA2oW-BhC2ARIsADSIAWpiwCwZ3FjQX_e0XurbKVFBx78cIIA_RGaDgOtFD_IEnrdqg6mpldgaAncAEALw_wcB" target="_blank">  (I used this one)</a></li>
-                <li>Digital scale</li>
+                <li><label><input type="checkbox">glass jar with a lid<a href="https://www.walmart.com/ip/Mainstays-Kitchen-Storage-38-Ounce-Clear-Glass-Lock-Lid-Jar/119760919?wmlspartner=wlpa&selectedSellerId=0&wl13=571&gclsrc=aw.ds&adid=22222222277119760919_117755028669_12420145346&wl0=&wl1=g&wl2=c&wl3=501107745824&wl4=pla-394283752452&wl5=9014313&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=local&wl12=119760919&veh=sem_LIA&gclsrc=aw.ds&gad_source=1&gclid=Cj0KCQiA2oW-BhC2ARIsADSIAWpiwCwZ3FjQX_e0XurbKVFBx78cIIA_RGaDgOtFD_IEnrdqg6mpldgaAncAEALw_wcB" target="_blank">  (I used this one)</a></label></li>
+                <li><label><input type="checkbox">Digital scale</label></li>
             </ul>
-            <strong>Ingredients</strong>
-                <p>For day one:</p>
+            <br>
+            <header><strong>Ingredients:</strong></header>
+
+               <p><strong>Day one:</strong></p>
                 <ul>
-                    <li>60 g whole wheat flour</li>
-                    <li>60 g filtered water</li>
+                    <li><label><input type="checkbox">60 g whole wheat flour</label></li>
+                    <li><label><input type="checkbox">60 g filtered water</label></li>
                 </ul>
-                <p>For days 3-7:</p>
+                <p><strong> Days 3-7:</strong></p>
                 <ul>
-                    <li>60 g unbleached all purpose flour or bread flour</li>
-                    <li>60 g filtered water</li>
+                    <li><label><input type="checkbox">60 g unbleached all purpose flour or bread flour</label></li>
+                    <li><label><input type="checkbox">60 g filtered water</label></li>
                 </ul>
 
-            <strong>Day 1</strong>
+                <strong>Day 1</strong>
             <ol>
-            <li>Add the 60 g of whole wheat flour and 60 g of water to your glass jar.</li>
-            <li>Mix with fork until smooth; the consistency will be like a thick and pasty.</li>
-            <li>Cover with lid and keep it in a warm spot (around 75F) for 24 hours.</li>
+                <li>Add the 60 g of whole wheat flour and 60 g of water to your glass jar.</li>
+                <li>Mix with fork until smooth; the consistency will be like a thick and pasty.</li>
+                <li>Cover with lid and keep it in a warm spot (around 75F) for 24 hours.</li>
             </ol>
 
             <strong>Day 2</strong>
@@ -155,7 +173,7 @@
             <p> It's time to start the feeding process! As the starter begins to fermente, bubbles will form on the surface and the starter will rise.
                 Eventually your starter will fall back down, indicating it's time to feed it. 
             </p>
-        
+        </p>
             <h3>Rate this Recipe & Leave a Comment</h3>
             <form action="#" method="get">
     
@@ -187,6 +205,16 @@
 
         </section> 
      </article>
+
+     <footer>
+        <p>&copy; 2025 Baking with Bri. All rights reserved.</p>
+        <p>
+          Follow me on 
+          <a href="https://www.instagram.com/bri.slezak" target="_blank">Instagram</a> | 
+          <a href="mailto:brislezak@gmail.com">Email me</a>
+        </p>
+      </footer>
+      
     </body>
 
 </html>
